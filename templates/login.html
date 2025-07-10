@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}Login Page {% endblock %}
+
+{% block content %}
+
+<h3>Login Page</h3>
+<form method="POST">
+    {{ form.hidden_tag() }}
+
+<fieldset>
+    <legend class="mb-4">Please write details below</legend>
+
+    <div>
+        {{ form.name.label }}
+        {{ form.name(class="form-control w-25") }}
+    </div>
+
+    <div class="mb-3">
+        {{ form.email.label }}
+        {{ form.email(class="form-control w-25") }}
+    </div>
+
+    <div class="mb-3">
+        {{ form.password.label }}
+        {{ form.password(class="form-control w-25") }}
+    </div>
+
+</fieldset>
+
+
+    <button type="button" class="btn btn-primary btn-sm">Submit</button>
+
+
+</form>
+{% endblock %}
+
+
+

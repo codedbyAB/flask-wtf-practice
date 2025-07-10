@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Movies</title>
+</head>
+<body>
+  <h1> My Favorite Movies</h1>
+
+ <h3>{% for movie in movies%}</h3>
+      <h3>{{movie.title}}</h3>
+      <h3>{{ movie.year}}</h3>
+      <h3>{{ movie.director}}</h3>
+      {% endfor %}
+
+
+
+</body>
+</html>
